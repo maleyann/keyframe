@@ -1,0 +1,76 @@
+html {
+  background-color: #fff;
+}
+.robit {
+  width: 100%;
+}
+.logo {
+  width: 25%;
+  padding: .5rem;
+}
+p {
+  font-size: 1.25rem;
+  padding: .5rem;
+  font-weight: bold;
+}
+.animation-frame {
+  background-color: #aac;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto 0;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.animation-frame .roomba {
+  position: relative;
+  left: -650px;
+  animation: roomba-anim 3s linear 1.5s 1 forwards;
+}
+.animation-frame p {
+  position: relative;
+  top: -200px;
+  animation: para-anim 2s ease-in 1.5s 1 forwards;
+}
+@keyframes roomba-anim {
+	0% {
+		top: 100px;
+		left: -250px;
+		transform: rotate(0deg);
+	}
+	30% {
+		top: 100px;
+		left: 30px;
+	}
+	50% {
+		top: 30px;
+		left: 30px;
+		transform: rotate(50deg);
+	}
+  70% {
+    top: -20px;
+		left: 30px;
+		transform: rotate(50deg);
+  }
+  90% {
+    top: -15px;
+    left: 250px;
+  }
+}
+@keyframes para-anim {
+  0% {
+		top: 100px;
+		transform: rotate(0deg);
+	}
+	30% {
+		top: 100px;
+	}
+	50% {
+		top: 50px;
+	}
+  70% {
+    top: -20px;
+  }
+  90% {
+    top: -15px;
+  }
+}
